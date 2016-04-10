@@ -64,7 +64,7 @@ public class PaymentTracker {
 		for (String fileName : fileNames) {
 			try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
 				
-				System.out.println(String.format("File '%s' was read!", fileName));
+				System.out.println(String.format("Payments from '%s' were inserted!", fileName));
 				
 				stream.forEach(this::processLine);
 

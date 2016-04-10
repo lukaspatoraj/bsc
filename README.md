@@ -36,7 +36,7 @@ mvn exec:java -Dexec.args="D:\input1.txt D:\input2.txt"
 java -jar target/bsc-1.0.jar D:\input1.txt D:\input2.txt
 ```
 * in runtime payments are loaded only from console after Enter is hit
-* USD exchange rate is set only for some currencies. if currency is missed, there is not exchange rate in output
+* USD exchange rate is set only for currencies, that are set in file "src/main/resources/exchange_rates.properties". if currency is missed, there is not exchange rate in output
 * termination :
 ```
 quit
