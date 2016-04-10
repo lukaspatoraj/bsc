@@ -18,6 +18,7 @@ public class PaymentRecords {
 	public PaymentRecords() {
 		paymentRecords = new ConcurrentHashMap<String, Integer>();
 		paymentsHistory = new Stack<Payment>();
+		usdExchangeRates = new HashMap<String, Double>();
 		loadExchangeRates();
 	}
 
@@ -34,8 +35,6 @@ public class PaymentRecords {
 	}
 
 	private void loadExchangeRates() {
-		usdExchangeRates = new HashMap<String, Double>();
-
 		Properties properties = new Properties();
 		InputStream inputStream = null;
 
