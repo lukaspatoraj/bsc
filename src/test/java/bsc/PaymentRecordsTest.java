@@ -108,7 +108,7 @@ public class PaymentRecordsTest {
 		
 		PaymentRecords paymentRecords = new PaymentRecords();
 		
-		//no possible to suppess "loadExchangeRates" in spy and then call again -> test in constructor
+		//not possible to suppress "loadExchangeRates" in spy and then call again -> test in constructor
 //		Method loadExchangeRatesMethod = PaymentRecords.class.getDeclaredMethod("loadExchangeRates");
 //		loadExchangeRatesMethod.setAccessible(true);
 //		loadExchangeRatesMethod.invoke(paymentRecordsSpy);
