@@ -3,12 +3,14 @@ Payment tracker
 
 Prerequisites
 -----------
-* Installed Java 8+
-* Installed Maven 3+
+* Java 8+
+* Maven 3+
 
 Installation
 -----------
 ```
+git clone https://github.com/lukaspatoraj/bsc
+cd bsc
 mvn clean install
 ```
 
@@ -29,15 +31,17 @@ or
 java -jar target/bsc-1.0.jar
 ```
 * specifying input files is optional. possible to use multiple files 
-** mvn exec:java -Dexec.args="D:\input1.txt D:\input2.txt"
-** java -jar target/bsc-1.0.jar D:\input1.txt D:\input2.txt
+```
+mvn exec:java -Dexec.args="D:\input1.txt D:\input2.txt"
+java -jar target/bsc-1.0.jar D:\input1.txt D:\input2.txt
+```
 * in runtime payments are loaded only from console after Enter is hit
 * USD exchange rate is set only for some currencies. if currency is missed, there is not exchange rate in output
-* termination 
+* termination :
 ```
 quit
 ```
-* history of payments 
+* history of payments :
 ```
 history
 ```
